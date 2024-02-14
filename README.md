@@ -1,15 +1,9 @@
-# TryHackMe-Splunk-Basics (https://imgur.com/zpui16Q)
+# TryHackMe-Splunk-Basics ([https://imgur.com/zpui16Q](https://miro.medium.com/v2/resize:fit:726/0*lAFon1NDL8rhE2y2.png))
 # Building a SOC + Honeynet in Azure (Live Traffic)
 ![Cloud Honeynet / SOC](https://i.imgur.com/QhT9O0P.jpg)
 ## Introduction
 
-For this project, I built a mini honeynet in Azure to simulate real-world cyber attacks. I ingested log sources from various resources into a Log Analytics workspace, which was then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, applied some security controls to harden the environment, measured metrics for another 24 hours, then showed the results below. The metrics I followed are:
-
-- SecurityEvent (Windows Event Logs)
-- Syslog (Linux Event Logs)
-- SecurityAlert (Log Analytics Alerts Triggered)
-- SecurityIncident (Incidents created by Sentinel)
-- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+For this project, I am documenting my journey learning the basics of SPlunk
 
 ## Technologies, Regulations, and Azure Components
 
