@@ -2,25 +2,29 @@
 
 ## Introduction
 
-For this project, I am documenting my journey learning the basics of SPlunk.
+For this project, I am documenting my journey learning the basics of Splunk. Within this module, I delved into the fundamentals of Splunk, examining its features and demonstrating how it enhances visibility into network activites, thereby expediting the detection process.
 
-## Technologies, Regulations, and Azure Components
+## About Splunk
 
-- Azure Virtual Network(VNet)
-- Azure Network Security Group(NSG)
-- Virtual Machines ((2) Windows (Attacker VM, Vulnerable VM), (1) Linux)
-- Log Analytics Workspace with Kusto Query Language (KQL) Queries
-- Azure Jey Vault for Secure Secrets Managemt
-- Azure Storeage Account for Data Storage
-- Microsoft Sentinel for Security Information and Event Management(SIEM)
-- Microsoft Defender for Cloud to Protect Cloud Resources
-- WIndows Remote Desktop for Remote Access
-- Command Line Interface(CLI) for System Management
-- Posershell for Automation and COnfiguration Management
-- [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) for Security Control
-- [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) for Incident Handling Guidance
+- Splunk stands out as a prominent Security Information and Event Management (SIEM) solution, offering the capability to gather, assess, and correlate real-time network and machine logs. 
   
-## Methodology
+## Components of Splunk
+
+- Forwarder
+- Idexer
+- Search Head
+
+- Forwarder - is installed on the endpoint to be monitored
+Its main task is to collect data and send it to the Splunk instance such as (event logs, website logs, firewall logs, etc)
+-   web server generating web traffic
+- windows machine generating windows event logs, powershell, and Sysmon data
+- Linux host generating host-centric logs
+- database generating DB connection requests, responses and errors
+o	Indexer-processes the data it received from forwarders. Takes data, normalizes it into field-value pairs, determines the datatype of the data, and stores them as events
+o	Search Head – this is a place within the Search & Reporting app where users can search the indexed logs 
+	Searches can be for a term or use a Splunk Search Processing Language which is where the requests is sent to the indexer and the relevant events are returned in the form of field-value pairs
+	Search Head also provides the ability to transform the results into presentable tables, visualizations (pie charts, bar charts etc)
+
 
 - Creating the Honeynet: Initially, I deployed multiple virtual machines with known vulnerabilities in Azure, creating a simulated insecure environment.
 - Monitoring and Analysis: Next, I configured Azure to collect logs from various sources and consolidated them in the Log Analystics Workspace. Using Microsoft Sentinel, I built attack maps, setup alert triggers, and created incidents based on the gathered data.
