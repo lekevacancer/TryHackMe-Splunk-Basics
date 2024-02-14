@@ -1,9 +1,8 @@
-# [TryHackMe-Splunk-Basics](https://imgur.com/zpui16Q](https://miro.medium.com/v2/resize:fit:726/0*lAFon1NDL8rhE2y2.png)
-# Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://i.imgur.com/QhT9O0P.jpg)
+# ![TryHackMe-Splunk-Basics](https://miro.medium.com/v2/resize:fit:726/0*lAFon1NDL8rhE2y2.png)
+
 ## Introduction
 
-For this project, I am documenting my journey learning the basics of SPlunk
+For this project, I am documenting my journey learning the basics of SPlunk.
 
 ## Technologies, Regulations, and Azure Components
 
