@@ -1,4 +1,4 @@
-# TryHackMe-Splunk-Basics [(https://imgur.com/zpui16Q](https://miro.medium.com/v2/resize:fit:726/0*lAFon1NDL8rhE2y2.png)]
+# [TryHackMe-Splunk-Basics][(https://imgur.com/zpui16Q](https://miro.medium.com/v2/resize:fit:726/0*lAFon1NDL8rhE2y2.png)]
 # Building a SOC + Honeynet in Azure (Live Traffic)
 ![Cloud Honeynet / SOC](https://i.imgur.com/QhT9O0P.jpg)
 ## Introduction
